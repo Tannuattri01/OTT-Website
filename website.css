@@ -245,7 +245,7 @@ header {
     }
     .popular-section-imgtext{
         position: relative;
-        right: 80px;
+        right: 60px;
     }
 }
 @media  screen and (max-width:820px) {
