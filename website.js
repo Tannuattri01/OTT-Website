@@ -126,59 +126,9 @@ function displayListItems() {
     }
 }
 
-// const shows = [
-//   {
-//     title: "Extraordinary You",
-//     description: "Every moment of my life is meant for you” – Extraordinary you.",
-//     image: ".//popular images/img1.png",
-//   },
-//   {
-//     title: "Goodbye Summer",
-//     description: "There, he falls in love with Soo-Min .",
-//     image: "/popular images/img2.png",
-//   },
-//   {
-//     title: "Rookie Cops",
-//     description: "Rookie Cops is a captivating South Korean drama series that offers a unique blend of action, comedy, and heartfelt moments.",
-//     image: "/popular images/img3.png",
-//   },
-//   {
-//     title: "Nineteen Others",
-//     description: "I really really home to see Eun Soo as a lead Actress in a big show. I’ve adored her since Twinkling watermelon she is too cute !!.",
-//     image: "/popular images/img4.png",
-//   },
-// ];
 
-// function createShowCard(show) {
-//   const card = document.createElement("div");
-//   card.className = "show-card";
 
-//   const img = document.createElement("img");
-//   img.src = show.image;
-//   img.alt = show.title;
 
-//   const title = document.createElement("h4");
-//   title.textContent = show.title;
-
-//   const description = document.createElement("p");
-//   description.textContent = show.description;
-
-//   card.appendChild(img);
-//   card.appendChild(title);
-//   card.appendChild(description);
-
-//   return card;
-// }
-
-// function displayShows() {
-//   const container = document.getElementById("show-container");
-//   shows.forEach((show) => {
-//     const card = createShowCard(show);
-//     container.appendChild(card);
-//   });
-// }
-
-// document.addEventListener("DOMContentLoaded", displayShows);
 
 const cardData = [
   {
@@ -187,28 +137,28 @@ const cardData = [
     image: "./image/img1.jpg"
   },
   {
-    title: "Cloud Atlas",
+    title: "Creature",
     description: "Everything is connected.",
     image: "./image/img7.png"
   },
   {
-    title: "Cloud Atlas",
+    title: "The conjuring",
     description: "Everything is connected.",
     image: "./image/img8.png"
   },
   {
-    title: "Cloud Atlas",
+    title: "A Ghost Ruined My Life",
     description: "Everything is connected.",
     image: "./image/img9.png"
   },
   {
-    title: "Cloud Atlas",
-    description: "Everything is connected.",
+    title: "OUIJA",
+    description: "They thought it was just a game",
     image: "./image/img10.png"
   },
   {
-    title: "Cloud Atlas",
-    description: "Everything is connected.",
+    title: "The Appeared",
+    description: "How can you save already dead",
     image: "./image/img11.png"
   }
 ];
