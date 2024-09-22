@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="website.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+   <!-- header section -->
+   <header>
+   <a href="index.html"> <img class="nav-heading-logo" style="height: 50px;" src="./image/video-record.png" alt=""></a>
+     <h2 class="logo">Filmlane</h2>
+    <ul class="nav nav-items">
+      <li class="item1">
+          <span class="material-symbols-outlined item1">home</span>
+          Home
+        </li>
+      <li class="item2">
+          <span class="material-symbols-outlined item2">movie</span>
+          Movies</li>
+      <li class="item3">
+          <span class="material-symbols-outlined item3">payments</span>
+          Shows</li>
+      <li class="item4">
+          <span class="material-symbols-outlined item4">contacts</span>
+          Streaming</li>
+    </ul>
+    <button style="background-color: white; border-radius: 5px;" class="theme-toggle" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" class="gfg-icon" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path>
+      <path d="M6.343 17.657l-1.414 1.414"></path><path d="M6.343 6.343l-1.414 -1.414"></path><path d="M17.657 6.343l1.414 -1.414"></path><path d="M17.657 17.657l1.414 1.414"></path><path d="M4 12h-2"></path><path d="M12 4v-2"></path><path d="M20 12h2"></path><path d="M12 20v2"></path>
+  </svg></button>
+
+    <div class="search">
+      <input type="text" placeholder="search movie" style="border-color: none;">
+      <span class="material-symbols-outlined">search</span>
+    </div>
+    <div class="header-login-button">
+      <a href="sign.html"><button class="login-btn">Sign in</button></a>
+    </div>
+    <div class="my-list" id="my-list">
+      <button class="my-list-btn" id="open-mylist">My List</button>
+    </div>
+
+    <div class="list-tab" id="list-tab">
+      <h1>My List</h1>
+      <div class="listcart" id="listcart" style="margin-left: 5px;">No items in list.</div>
+      <div class="btn">
+        <button class="close" id="close-my-list">Close</button>
+        <button class="checkout">Checkout</button>
+      </div>
+    </div>
+    <div class="dotted">
+      <div class="dotted-image">
+        <div class="dropdown">
+          <img class="btn dropdown-toggle" style="height: 50px;" type="button" src="./image/dotted.png"
+            data-bs-toggle="dropdown" aria-expanded="false" alt="">
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href=""></a><input
+                style="width: 100px; margin-left:15px; border-radius :10px; border: none;" type="text"
+                placeholder="Search"></li>
+            <li><a class="dropdown-item" href="./website.html">Home</a></li>
+            <li><a class="dropdown-item" href="#">Movies</a></li>
+            <li><a class="dropdown-item" href="./pricing.html">Shows</a></li>
+            <li><a class="dropdown-item" href="./sign.html"><button
+                  style="background-color: red; border-radius: 10px; border:none; color:white;">Sign in</button></a>
+            </li>
+
+            <li><a class="dropdown-item" href=""><button
+                  style="background-color: red; border-radius: 10px; border:none; color:white;">My List</button></a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header section end -->
+
+    <!-- popular section start -->
+    <div class="popular-section"style="margin-top:150px">
+        <div class="popular-section-text" style="margin-bottom: 30px;">
+            <h1 class="popular-text">TOP POPULAR SHOW</h1>
+            <button class="popular-btn popular-button"><a class="click" href="#">See all</a></button>
+        </div>
+        <div class="container text-center " >
+            <div class="row popular-section-imgtext"style="display: flex; flex-direction: row; margin-left :90px;">
+                <div class="col mt-3 mt-lg-0 popular-section-image" style="position: relative;">
+                    <img class="popular-img1" style="height: 400px; " src="./popular images/img1.png" alt="">         
+                     <div class="overlay" style="position: absolute; left: 16px; width: 90%;" >
+                      <h2  style="z-index: 2 !important;">Extraordinary You</h2>
+                      <p >Extraordinary You is a 2019 South Korean television series .</p></div>
+
+          
+                    <button class="popular-section-btntext" onclick="addItemToList('./popular images/img1.png')">Add to
+                        My
+                        List</button>
+                </div>
+                <div class="col mt-3 mt-lg-0 popular-section-image " style="position: relative;">
+                    <img class="popular-img1" style="height: 400px; " src="./popular images/img2.png" alt="">
+                    <div class="overlay"style="position: absolute; left: 16px; width: 90%;"  >
+                      <h2  style="z-index: 2 !important;">Goodbye Summer</h2>
+                      <p >Hyun-Jae (One) is only 19-years-old, but he has a terminal illness and he does not have much time left to live.</p></div>
+            
+                    <button class="popular-section-btntext" onclick="addItemToList('./popular images/img2.png')">Add to
+                        My
+                        List</button>
+                </div>
+                <div class="col mt-3 mt-lg-0 popular-section-image  " style="position: relative;">
+                    <img class="popular-img1" style="height: 400px; " src="./popular images/img3.png" alt="">
+                    <div class="overlay"style="position: absolute; left: 16px; width: 90%;" >
+                      <h2  style="z-index: 2 !important;">Rookie cops</h2>
+                      <p >Wi Seung-Hyun (Kang Daniel) is a freshman at the police university and ranks at the top of his class. </p></div>
+                 
+                    <button class="popular-section-btntext" onclick="addItemToList('./popular images/img3.png')">Add to
+                        My
+                        List</button>
+                </div>
+                <div class="col mt-3 mt-lg-0 popular-section-image" style="position: relative;" ;>
+                    <img class="popular-img1" style="height: 400px; " src="./popular images/img4.png" alt="">
+                    <div class="overlay"style="position: absolute; left: 16px; width: 90%;" >
+                      <h2  style="z-index: 2 !important;">Nineteen Others</h2>
+                      <p >Drama Special: Nineteen Otters | Yeolahob Haedaldeul (KBS2 / 2022)</p></div>
+                  
+                    <button class="popular-section-btntext" onclick="addItemToList('./popular images/img4.png')">Add to
+                        My
+                        List</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- popular section end -->
+
+        <!-- release section start -->
+         <div style="display: flex; justify-content: center; margin-top: 30px;">
+          <h2>New Releases Movie</h2>
+         </div>
+        <div class="container"style="display: flex; flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;" id="card-container"></div>
+         <!-- release section end -->
+
+        <!-- trending section start -->
+        <div class="trending-section">
+            <div class="trending-name">
+              <h1>💫Trending Now</h1>
+            </div>
+            <div class="trending-section-image">
+              <div class="trending-image imgbox">
+                <div style="display: flex; flex-direction: column;">
+                  <img class="trending-img1" src="./trending images/img1.jpg" alt="">
+          
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img1.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img2.jpg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img2.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img3.jpg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img3.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img4.jpeg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img4.jpeg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img5.jpg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img5.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class="trending-img1" src="./trending images/img1.jpg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img1.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img3.jpg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img3.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img4.jpeg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img4.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img5.jpg" alt="">
+                 
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img5.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class="trending-img1" src="./trending images/img1.jpg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img1.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img2.jpg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img2.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img4.jpeg" alt="">
+                  
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img4.jpg')">Add to My
+                    List</button>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <img class=" trending-img1" src="./trending images/img5.jpg" alt="">
+                 
+                  <button class="trending-section-text" onclick="addItemToList('./trending images/img5.jpg')">Add to My
+                    List</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- trending section end -->
+
+           <!-- footer section start -->
+    <div class="container" style="position: relative;">
+      <footer class="py-5">
+        <div>
+          <img style="height: 100px;" src="./image/video-record.png" alt="">
+           <h2class="logo" style="position: absolute; bottom: 176px; left: 129px; font-size: 53px; color: none; font-weight: 700;">Filmlane</h2>
+        </div>
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form">
+            <h5>Subscribe</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <a href="./sign.html"><button class="btn btn-primary" type="button"
+                  style="color: white; background-color: #00000080; border-color: white;">Subscribe</button></a>
+            </div>
+          </form>
+        </div>
+    </div>
+
+
+    </footer>
+  </div>
+  <!-- footer section end -->
+        <script src="./website.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

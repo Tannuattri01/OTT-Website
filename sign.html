@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <!-- sign in section start -->
+    <div class="signin-section" style="border-radius: 10px; display: flex;">
+        <div class="sign-section" style="height: 600px; width: 50%;" style="display: flex; flex-direction: column;">
+            <h2 class="sign-text">Sign in</h2>
+            <form id="signupForm" style="    display: flex; align-items: center; flex-direction: column; gap: 30px;">
+
+                <input class="email-input" id="email" type="text" placeholder="Enter your email" required>
+
+                <div class="pass-sign-btn">
+                    <input class="pass-input" id="password" type="password" placeholder="Enter your password" required>
+                    <button type="submit" class="sign-btn">Sign in</button>
+                </div>
+            </form>
+            <div class="sign-button">
+                <input type="radio" id="rememberMe" name="fav_language" value="Remember me">
+                <label class="radio" for="rememberMe">Remember me</label>
+                <a href="#">
+                    <h5 style="color:black;">Forgot password?</h5>
+                </a>
+            </div>
+            <p id="message"></p>
+        </div>
+        <div class="welcome-section">
+            <img class="welcome-image" style="height: 400px; margin-top: 60px; border-radius: 10px;"
+                src="./popular images/img5.png" alt="">
+        </div>
+    </div>
+    <!-- sign in section end -->
+    <script src="sign.js"></script>
+</body>
+
+</html>
