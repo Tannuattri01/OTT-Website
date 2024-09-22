@@ -519,11 +519,7 @@ body.activeTabCart.container{
     animation-name: hoverPop;
     animation-duration: .4s;
 }
-@media  screen and (max-width:500px) {
-    .trending-name{
-      margin-left: 30px;
-    }
-}
+
 /* trending section end */
 
 /* streaming-section start */
@@ -597,6 +593,11 @@ body.activeTabCart.container{
 @media  screen and (max-width:700px) {
     .streaming-logo-heading{
       font-size: small !important;
+    }
+}
+@media  screen and (max-width:500) {
+    .streaming-text{
+      margin-left:30px;
     }
 }
 
