@@ -13,25 +13,29 @@
 </head>
 
 <body>
-   <!-- header section -->
-   <header>
-   <a href="index.html"> <img class="nav-heading-logo" style="height: 50px;" src="./image/video-record.png" alt=""></a>
-     <h2 class="logo">Filmlane</h2>
+  <!-- header section -->
+  <header>
+    <div class="header-section-div" style="display: flex;">
+    <img class="nav-heading-logo" style="height: 50px;" src="./image/video-record.png" alt="">
+    <a href="" class="logo" style=" color: white;">Filmlane</a>
+  </div>
+  <div class="header-section-nav-item" >
     <ul class="nav nav-items">
-      <li class="item1">
+      <li><a class="item1" href="index.html" style="color: white;">
           <span class="material-symbols-outlined item1">home</span>
           Home
-        </li>
-      <li class="item2">
+        </a></li>
+      <li><a class="item2" href="#movie"  style="color: white;">
           <span class="material-symbols-outlined item2">movie</span>
-          Movies</li>
-      <li class="item3">
+          Movies</a></li>
+      <li><a class="item3" href="#shows"  style="color: white;">
           <span class="material-symbols-outlined item3">payments</span>
-          Shows</li>
-      <li class="item4">
+          Shows</a></li>
+      <li><a class="item4" href="#streaming"  style="color: white;">
           <span class="material-symbols-outlined item4">contacts</span>
-          Streaming</li>
+          Streaming</a></li>
     </ul>
+  </div>
     <button style="background-color: white; border-radius: 5px;" class="theme-toggle" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" class="gfg-icon" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path>
@@ -39,15 +43,17 @@
   </svg></button>
 
     <div class="search">
-      <input type="text" placeholder="search movie" style="border-color: none;">
+      <input type="text" placeholder="search movie">
       <span class="material-symbols-outlined">search</span>
     </div>
+    <div class="header-section-button" style="display: flex; gap: 10px;">
     <div class="header-login-button">
       <a href="sign.html"><button class="login-btn">Sign in</button></a>
     </div>
     <div class="my-list" id="my-list">
       <button class="my-list-btn" id="open-mylist">My List</button>
     </div>
+  </div>
 
     <div class="list-tab" id="list-tab">
       <h1>My List</h1>
