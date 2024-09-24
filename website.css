@@ -12,9 +12,6 @@ body{
 
 /* Styling for the theme toggle button */
 .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -37,7 +34,12 @@ body{
 .theme-toggle:hover {
     transform: scale(1.1);
 }
-
+@media screen and(max-width:500px) {
+    .theme-toggle{
+        position: relative;
+    right: 59px;
+    }
+}
 
 header {
     position: absolute;
@@ -47,7 +49,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px;
+    padding-left: 20px;
+    padding-top: 20px;
     z-index: 10;
 }
 
@@ -170,7 +173,7 @@ header {
 }
 .email-input,.pass-input{
     height: 40px;
-    width: 40%;
+    width: 42%;
     border-radius: 10px;
 }
 .pass-input{
@@ -234,10 +237,18 @@ header {
     .sign-section{
         margin-left: 83px;
     }
+}@media  screen and (max-width:1024px) {
+    .email-input{
+        width: 62%;
+    }
+}@media  screen and (max-width:768px) {
+    .email-input{
+        width: 83%;
+    }
 }
 @media  screen and (max-width:500px) {
     .email-input{
-        width: 138%;
+        width: 152%;
     }
     .signin-section{
         position: relative;
@@ -348,17 +359,29 @@ body.activeTabCart.container{
 @media screen and (max-width:500px){
     .nav-heading-logo,.logo{
         position: relative;
-        right: 80px;
+        right: 15px;
     }
    .trending-image{
     margin-left: 0;
    }
    .theme-toggle{
     position: relative;
-    margin-bottom: 30px;
+    right: 8px;
    }
 }
 
+@media screen and(max-width:500px) {
+    .header{
+       display: flex;
+       justify-content: center;
+    }
+}
+@media screen and (max-width:320px){
+    .dropdown{
+        position: absolute;
+        right: 29px;
+    }
+}
 /* header section end */
 
 /* main section start */
@@ -419,6 +442,12 @@ body.activeTabCart.container{
        height: 400px !important;
     }
 }
+/* @media  screen and (max-width:1024px) {
+    .main-section-img1{
+       width: 74% !important;
+    }
+} */
+
 /* main section end */
 
 /* trending section start */
@@ -761,7 +790,7 @@ body.activeTabCart.container{
 }
 @media screen and (max-width:554px) {
     .download-section-img{
-        height: 500px;
+        height: 330px;
     }
 
     .downloand-section-text{
@@ -891,6 +920,14 @@ body.activeTabCart.container{
         margin-left: 65px !important;
     }
 }
+@media  screen and (max-width:768px){
+    .overlay{
+        position: absolute;
+        left: 50px !important;
+        width: 77% !important;
+    }
+    
+}
 @media  screen and (max-width:500px){
     .overlay{
         display: none;
@@ -971,3 +1008,11 @@ body.activeTabCart.container{
     color: #555;
   }
 /* release section end */
+/* footer section start */
+@media screen and (max-width:768px){
+    .logo1{
+        position: absolute;
+    top: 75px;
+    }
+}
+/* footer section end */
